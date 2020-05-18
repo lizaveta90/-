@@ -1,0 +1,20 @@
+void main() {
+Component svekla = Component("Свекла", 2);
+svekla.display();  
+Component kartoshka = Component("Картошка", 4);
+kartoshka.display();  
+Component kapusta = Component("Капуста", 1);
+kapusta.display();  
+}
+
+class Component {
+  String name;
+  int count;
+  Component (String n, int c)
+  {name = n;
+  count = c;
+  }
+  void display() {
+    print("Ингридиент: $name в количестве $count шт");
+  }
+}
